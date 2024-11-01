@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*Example 3*/
+        p:first-child i {
+            color: blue;
+        }
+
+        /*Example 4*/
+        q:lang(no) {
+            quotes: "~""~";
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!--Example 3-->
+    <h4>Example: 3</h4>
+
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+    <div>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+        <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    </div>
+
+
+    <!--Example 4-->
+    <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+    <p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+
+</body>
+
+</html>

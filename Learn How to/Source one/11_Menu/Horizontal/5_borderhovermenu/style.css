@@ -1,0 +1,64 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+#bottombordermenu ul, #topbordermenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    position: relative;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: width 0.3s ease-in 0.6s;
+}
+
+#bottombordermenu li a:after, #topbordermenu li a:after {
+    content: '';
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    transition: width 0.3s ease-in 0.6s;
+}
+
+#bottombordermenu li a:after {
+    bottom: 0;
+}
+
+#bottombordermenu li a:hover:after, #topbordermenu li a:hover:after {
+    width: 100%;
+    transition: width 0.3s ease-in 0.6s;
+}
+
+li a:hover:not(.active) {
+    background-color: #888;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+/* Example 02 */
+
+#topbordermenu li a:after {
+   top: 0; 
+}
+

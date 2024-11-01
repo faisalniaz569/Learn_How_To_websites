@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first of type</title>
+    <style>
+        body {
+            font-family: tahoma;
+            font-size: 20px;
+        }
+        
+        .box1, .box2 {
+            padding: 25px 10px;
+            border: 2px solid gray;
+        }
+        
+        /*.container p:first-child {
+            color: red;
+        }*/
+        
+        /*.container p:last-child {
+            color: red;
+        }*/
+        
+        /*.container p:first-of-type {
+            color: red;
+        }*/
+        
+        /*.container p:last-of-type {
+            color: red;
+        }*/
+        
+        /*.container p:nth-child(even) {
+            color: red;
+        }*/
+        
+        /*.container p:nth-child(2n) {
+            color: red;
+        }*/
+        
+        /*.container p:nth-child(odd) {
+            color: red;
+        }*/
+        
+        /*.container p:nth-child(2n+1) {
+            color: red;
+        }*/
+        
+        /*.container p:nth-last-child(even) {
+            color: red;
+        }*/
+        
+        /*.container p:nth-last-child(odd) {
+            color: red;
+        }*/
+        
+        /*.container p:nth-of-type(1) {
+            color: red;
+        }*/
+        
+        /*.container p:nth-last-of-type(1) {
+            color: red;
+        }*/
+        
+        /*.container :only-of-type {
+            color: red;
+        }*/
+        
+        /*.container :only-child {
+            color: red;
+        }*/
+        
+        /*.container :empty {
+            color: white;
+            background-color: red;
+            width: 200px;
+            height: 30px;
+        }*/
+        
+        div.box1 :not(p) {
+            color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box1">
+            <h1>Box1 Heading</h1>
+            <p>Box1 paragraph one</p>
+            <p>Box1 paragraph two</p>
+            <p>Box1 paragraph three</p>
+            <p>Box1 paragraph four</p>
+            <p></p>
+        </div>
+        <p>Container paragraph one</p>
+        <p>Container paragraph two</p>
+        <div class="box2">
+            <p>Box2 paragraph one</p>
+            <p>Box2 paragraph two</p>
+            <p>Box2 paragraph three</p>
+            <p>Box2 paragraph four</p>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

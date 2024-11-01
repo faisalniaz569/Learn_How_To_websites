@@ -1,0 +1,35 @@
+/* Example: 1 */
+
+.borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30% round;
+}
+
+/* Example: 2 */
+
+.borderimg2 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 30 stretch;
+}
+
+
+/* Example: 3 */
+
+.borderimg3 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 20% round;
+}
+
+/* Example: 4 */
+
+.borderimg4 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 50 round;
+}
+
+
+

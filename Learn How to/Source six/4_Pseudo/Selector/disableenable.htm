@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        input[type=text]:enabled {
+            background: #ffff00;
+        }
+
+        input[type=text]:disabled {
+            background: #dddddd;
+        }
+
+        option:disabled {
+            background: red;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        First name: <input type="text" value="Mickey"><br>
+        Last name: <input type="text" value="Mouse"><br>
+        Country: <input type="text" disabled="disabled" value="Disneyland">
+    </form>
+
+    <select>
+        <option value="volvo">Volvo</option>
+        <option value="saab" disabled>Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi" disabled>Audi</option>
+        <option value="bmw">BMW</option>
+    </select>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+#topbanner {
+    width: 100%;
+    height: 100vh;
+    background: url(fooddrink.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+
+}
+
+.content {
+    width: 1200px;
+    margin: auto;
+    text-align: justify;
+}
+
+/* menu logo */
+
+.mainmenu .logo {
+    float: left;
+    color: white;
+    display: inline-block;
+    padding-left: 75px;
+    line-height: 3;
+}
+
+
+/* transparent menu */
+
+.row {
+    overflow: auto;
+}
+
+.mainmenu {
+    width: 100%;
+    position: fixed;
+}
+
+.mainmenu.black {
+    background: black;
+    border-bottom: 0;
+    transition: 1s;
+}
+
+
+.menuthree {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.menuthree a {
+    list-style: none;
+    float: left;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    font-family: sans-serif;
+    text-align: right;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.mainmenu.black {
+    background: black;
+}
+
+.menuthree a:hover {
+    background-color: #4cde02;
+}
+
+.topnav-right {
+    float: right;
+    padding-right: 75px;
+}

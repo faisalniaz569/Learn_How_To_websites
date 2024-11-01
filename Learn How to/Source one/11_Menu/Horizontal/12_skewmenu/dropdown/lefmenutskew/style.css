@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+#Left_skewdropdownmenu {
+    position: relative;
+}
+
+#Left_skewdropdownmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    width: 100px;
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+}
+
+li.first {
+    margin-left: 10px;
+}
+
+.first:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    right: 100px;
+    background-color: transparent;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    position: absolute;
+    left: -25px;
+    top: 50px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a span {
+    transform: skew(0);
+}
+
+.dropdown-content a:hover {
+    background-color: red;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li a,
+.dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+li a span {
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -ms-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    display: block;
+}
+
+li a:hover:not(.active),
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #04AA6D;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #04AA6D;
+}

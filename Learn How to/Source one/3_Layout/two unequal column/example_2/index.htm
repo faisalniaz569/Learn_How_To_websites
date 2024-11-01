@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Two unequal column</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        .column {
+            float: left;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .left,
+        .secondright {
+            width: 25%;
+        }
+
+        .right,
+        .secondleft {
+            width: 75%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        h4 {
+            text-transform: uppercase;
+            font-family: Montserrat, sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        
+        pre {
+            white-space: pre-line;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <!--first row-->
+        <div class="row">
+            <div class="column left">
+                <h4>Contact</h4>
+
+                <address>
+                    <pre style="white-space-collapse: preserve-breaks">
+                    Street: 86 Ings Lane
+
+                    City: Darnabo 
+
+                    Phone number: 077 4633 0876 
+
+                    Zip code: AB53 5TJ 
+
+                    Country calling code: +44 
+
+                    Country: United Kingdom
+                </pre>
+                </address>
+            </div>
+            <div class="column right">
+                <h4>About us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eveniet dolore dolores velit pariatur ex expedita ad non facilis, ea sunt harum iure voluptatibus accusamus et enim deserunt corporis architecto repudiandae est! Quaerat ipsam possimus maxime consequuntur numquam fuga magnam blanditiis officiis voluptatem sapiente quod consequatur, perferendis eos deserunt nihil culpa molestiae, sequi error reprehenderit, cupiditate fugit! Ab, quas ullam consequuntur alias, quia blanditiis iure. Rem ducimus mollitia, delectus nostrum.
+                </p>
+            </div>
+        </div>
+
+
+        <!--second row-->
+        <div class="row">
+            <div class="column secondleft">
+
+                <h4>About us</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eveniet dolore dolores velit pariatur ex expedita ad non facilis, ea sunt harum iure voluptatibus accusamus et enim deserunt corporis architecto repudiandae est! Quaerat ipsam possimus maxime consequuntur numquam fuga magnam blanditiis officiis voluptatem sapiente quod consequatur, perferendis eos deserunt nihil culpa molestiae, sequi error reprehenderit, cupiditate fugit! Ab, quas ullam consequuntur alias, quia blanditiis iure. Rem ducimus mollitia, delectus nostrum.
+                </p>
+
+            </div>
+            <div class="column secondright">
+
+                <h4>Contact</h4>
+
+                <address>
+                    <pre style="white-space-collapse: preserve-breaks">
+                    Street: 86 Ings Lane
+
+                    City: Darnabo 
+
+                    Phone number: 077 4633 0876 
+
+                    Zip code: AB53 5TJ 
+
+                    Country calling code: +44 
+
+                    Country: United Kingdom
+                </pre>
+                </address>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

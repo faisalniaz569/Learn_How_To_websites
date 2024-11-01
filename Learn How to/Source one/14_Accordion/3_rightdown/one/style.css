@@ -1,0 +1,38 @@
+.accordion {
+    background-color: #FB8604;
+    color: #342009;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #D4EDF7;
+    color: #347B98;
+}
+
+.accordion:after {
+    content: '\2B9E';
+    color: #34091C;
+    font-weight: bold;
+    float: left;
+    margin-right: 5px;
+}
+
+.active:after {
+    content: "\2B9F";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

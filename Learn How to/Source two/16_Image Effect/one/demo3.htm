@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image Effects</title>
+    <style>
+        img {
+            -webkit-filter: grayscale(0%);
+            /* Safari 6.0 - 9.0 */
+            filter: grayscale(0%);
+            transition: 1s;
+        }
+
+        img:hover {
+            -webkit-filter: blur(5px);
+            /* Safari 6.0 - 9.0 */
+            filter: blur(5px);
+            transition: 1s;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <p>Convert the image to grayscale:</p>
+
+    <img src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+
+    <p><strong>Note:</strong> The filter property is not supported in Internet Explorer, Edge 12, or Safari 5.1 and earlier.</p>
+
+
+</body>
+
+</html>

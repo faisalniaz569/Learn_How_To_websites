@@ -1,0 +1,81 @@
+/* Example 1 */
+
+#searchone ul, .searchtwo ul.list, #searchthree ul.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#searchone li, .searchtwo li, #searchthree li {
+    float: left;
+}
+
+#searchthree li {
+    border-right: 1px solid #bbb;
+}
+
+#searchthree li:last-child {
+    border-right: 0;
+}
+
+#searchone li a, .searchtwo li a, #searchthree li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#searchone li a:hover:not(.active), 
+.searchtwo li a:hover:not(.active),
+#searchthree li a:hover:not(.active) {
+    background-color: #888;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+#searchone .search-container, 
+.searchtwo .search-container,
+#searchthree .search-container {
+    float: right;
+}
+
+#searchone input[type=text],
+.searchtwo input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+#searchone .search-container button, 
+.searchtwo .search-container button,
+#searchthree .search-container i {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+#searchthree .search-container i {
+    background: transparent;
+    color: white;
+}
+
+#searchone .search-container button:hover,
+.searchtwo .search-container button:hover {
+    background: #afacac;
+    color: white;
+}
+
+
+
+

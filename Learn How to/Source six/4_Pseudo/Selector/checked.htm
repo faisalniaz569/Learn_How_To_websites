@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Checked</title>
+    <style>
+        /*input:checked {
+            height: 50px;
+            width: 50px;
+        }*/
+
+        /*option:checked {
+            height: 100px;
+            width: 100px;
+        }*/
+        
+        input:checked, input:checked + span { background-color : lime}
+
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="radio" value="male" name="gender"> Male<br>
+        <input type="radio" value="female" name="gender"> Female<br>
+        <input type="checkbox" value="Bike"> I have a bike<br>
+        <input type="checkbox" value="Car"> I have a car
+    </form>
+
+    <br><br><br>
+
+    <select>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+    </select> <br><br><br>
+    
+    
+    <p>
+<input type="checkbox" checked="checked"> <span>Everything in this paragraph should have a green background</span></p>
+
+
+</body>
+
+</html>

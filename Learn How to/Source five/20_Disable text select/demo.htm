@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Disable text select</title>
+    <style>
+        .prevent-select {
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10 and IE 11 */
+            user-select: none;
+            /* Standard syntax */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Disable Text Selection</h1>
+
+    <p>This text can be selected.</p>
+    <p class="prevent-select">This text cannot be selected.</p>
+
+</body>
+
+</html>

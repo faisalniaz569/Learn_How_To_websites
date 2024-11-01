@@ -1,0 +1,93 @@
+body {
+    background: rgba(0,0,0,0.5) url(office4.jpg) no-repeat local center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 100vh;
+    color: white;
+    font-family: tahoma;
+    overflow: hidden;
+}
+
+.social_share_btns {
+    position: fixed;
+    top: 120px;
+}
+
+.social_share_btns ul {
+    padding: 0;
+    transform: translate(-350px, 0)
+}
+
+.social_share_btns ul li {
+    display: block;
+    margin: 5px;
+    width: 375px;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+}
+
+.social_share_btns ul li:hover {
+    transform: translate(110px, 0);
+    background: #f4096c;
+    transition: all 2s;
+}
+
+.social_share_btns ul li:hover a {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.facebook {
+    background-color: #3B5998;
+}
+
+.twitter {
+    background-color: #55ACEE;
+}
+
+.pinterest {
+    background-color: #d71e26;
+}
+
+.linkedin {
+    background-color: #007bb5;
+}
+
+.youtube {
+    background-color: #bb0000;
+}
+
+
+.social_share_btns ul li i {
+    margin-left: 10px;
+    color: black;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0 30px 30px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    transform: rotate(0deg);
+}
+
+.social_share_btns ul li:hover i {
+    color: #f4096c;
+    background: white;
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+
+
+
+
+
+
+
+

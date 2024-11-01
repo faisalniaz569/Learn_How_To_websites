@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .parallax {
+            background-image: url(img_parallax.jpg);
+
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parawrapper {
+            height: 1000px;
+            background-color: LightSeaGreen;
+            color: teal;
+            font-size: 30px;
+            line-height: 1.6;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="parallax"></div>
+
+    <div class="parawrapper">
+        <div class="content">
+            Scroll Up and Down this page to see the parallax scrolling effect.
+            This div is just here to enable scrolling.
+            Tip: Try to remove the background-attachment property to remove the scrolling effect.
+        </div>
+    </div>
+
+    <div class="parallax"></div>
+
+
+</body>
+
+</html>

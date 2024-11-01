@@ -1,0 +1,55 @@
+/* css style sheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+div#landingpage {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+div#landingpage .column {
+    width: 33.33%;
+    float: left;
+    padding: 10px;
+}
+
+.hack {
+    display: inline-block;
+}
+
+.hack img {
+    float: left;
+    margin-right: 10px;
+    height: auto;
+    display: block;
+}
+
+.hack p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 10px 10px 30px 0;
+    text-align: justify;
+    display: table;
+}
+

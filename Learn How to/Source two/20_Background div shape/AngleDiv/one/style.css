@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.angeldivshape {
+    background: white url("house.jpg") no-repeat 0 0;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.angeldivshape::before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    background-color: #d87474;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+}
+
+.angeldivshape::after {
+    content: '';
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+    background-color: #d87474;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.textarea {
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    left: 100px;
+}
+
+.textarea h1 {
+    font-size: 50px;
+    color: #772222;
+}
+
+.textarea p {
+    font-size: 22px;
+    color: #772222;
+    line-height: 1.6;
+}
+
+.angeldivshape button {
+    position: absolute;
+    top: 60%;
+    left: 100px;
+    background-color: #772222;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

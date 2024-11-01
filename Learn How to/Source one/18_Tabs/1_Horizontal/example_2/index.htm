@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <script src="icon5.js"></script>
+</head>
+
+<body>
+
+
+    <div class="hero">
+        <div class="btn_box">
+            <button id="btn1" onclick="openHTML()"><i class="fab fa-html5"></i> HTML</button>
+            <button id="btn2" onclick="openCSS()"><i class="fab fa-css3"></i>CSS</button>
+            <button id="btn3" onclick="openJS()"><i class="fab fa-codepen"></i>JAVASCRIPT</button>
+        </div>
+        
+        <!--first content-->
+        <div id="content1" class="content">
+            <div class="content_left">
+                <h1>Learn HTML</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga eum inventore officia debitis, esse est impedit architecto dolorem eius voluptatem sequi tempore consequatur fugiat, nulla obcaecati et reiciendis unde aut, exercitationem quia. Repellendus, perferendis! Optio laboriosam alias deleniti, ea cumque!
+                </p>
+                
+                <a href="#">Learn more</a>
+            </div>
+            <div class="content_right">
+                <img src="one.jpg" alt="one">
+            </div>
+        </div>
+        
+        <!--second content-->
+        <div id="content2" class="content">
+            <div class="content_left">
+                <h1>Learn CSS</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga eum inventore officia debitis, esse est impedit architecto dolorem eius voluptatem sequi tempore consequatur fugiat, nulla obcaecati et reiciendis unde aut, exercitationem quia. Repellendus, perferendis! Optio laboriosam alias deleniti, ea cumque!
+                </p>
+                
+                <a href="#">Learn more</a>
+            </div>
+            <div class="content_right">
+                <img src="two.jpg" alt="two">
+            </div>
+        </div>
+        
+        
+        <!--third content-->
+        <div id="content3" class="content">
+            <div class="content_left">
+                <h1>Learn JavaScript</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga eum inventore officia debitis, esse est impedit architecto dolorem eius voluptatem sequi tempore consequatur fugiat, nulla obcaecati et reiciendis unde aut, exercitationem quia. Repellendus, perferendis! Optio laboriosam alias deleniti, ea cumque!
+                </p>
+                
+                <a href="#">Learn more</a>
+            </div>
+            <div class="content_right">
+                <img src="three.jpg" alt="three">
+            </div>
+        </div>
+        
+        
+    </div>
+
+    
+    <script>
+    
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        
+        
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        
+        function openHTML() {
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            
+            btn1.style.color = "#ff7846";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+
+            
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+        }
+        
+        function openCSS() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(100%)";
+            
+            btn1.style.color = "#000";
+            btn2.style.color = "#ff7846";
+            btn3.style.color = "#000";
+            
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0.3s";
+            content3.style.transitionDelay = "0s";
+        }
+        
+        function openJS() {
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+            
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn3.style.color = "#ff7846";
+            
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0.3s";
+        }
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    height: 300px;
+    padding: 10px;
+}
+
+/* speachbubble_1 */
+.bubbleshape_1 {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 80%, 95% 85%, 85% 85%, 85% 100%, 70% 85%, 5% 85%, 0% 80%, 0% 5%);
+    background-color: #c2eb47;
+    margin: 5px;
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+/* speachbubble_2 */
+.bubbleshape_2 {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 80%, 95% 85%, 85% 85%, 66.25% 100%, 70% 85%, 5% 85%, 0% 80%, 0% 5%);
+    background-color: red;
+    margin: 5px;
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+/* speachbubble_3 */
+.bubbleshape_3 {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 80%, 95% 85%, 52.5% 85%, 59.75% 100%, 32% 85%, 5% 85%, 0% 80%, 0% 5%);
+    background-color: red;
+    margin: 5px;
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+/* speachbubble_4 */
+.bubbleshape_4 {
+    clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 80%, 95% 85%, 52.5% 85%, 25% 100%, 32% 85%, 5% 85%, 0% 80%, 0% 5%);
+    background-color: red;
+    margin: 5px;
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+
+/* bubbleshape_5 */
+
+.bubbleshape_5::before {
+    
+    content: '\f0c2';
+    font-size: 100px;
+    color: tomato;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

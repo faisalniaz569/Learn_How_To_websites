@@ -1,0 +1,63 @@
+anchor =>
+
+:link, :hover, :visited, :active, :target, :lang
+
+parent and child =>
+
+:first-child, 
+:first-line, 
+:first-letter, 
+:last-child, 
+:nth-child(), 
+:nth-last-child(), 
+:nth-last-of-type(), 
+:nth-of-type(), 
+:only-child, 
+:only-of-type, 
+:first-of-type, 
+:last-of-type, 
+:before, 
+:after, 
+:marker,
+:empty, 
+:not(), 
+:selection
+
+::marker pseudo-element selects the markers of list items.
+
+The ::selection pseudo-element matches the portion of an element that is selected by a user.
+::selection: color, background, cursor, and outline
+
+
+input =>
+
+:focus,
+:in-range,
+:out-of-range,
+:valid,
+:invalid,
+:checked,
+:disabled,
+:enabled,
+:required,
+:optional,
+:read-only,
+:read-write,
+:default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

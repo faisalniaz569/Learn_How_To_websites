@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 50px 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.testimonialslider {
+    max-width: 600px;
+    text-align: center;
+}
+
+.mySlides {
+    position: relative;
+    padding: 80px;
+    display: none;
+}
+
+.box {
+    background-color: coral;
+    color: white;
+    padding: 80px 60px 60px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 100px auto;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.mySlides img {
+    content: attr(x);
+    position: absolute;
+    top: 175px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+p {
+    line-height: 1.6;
+    font-style: italic;
+}
+
+p.author {
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+.box::before,
+.box:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size: 25px;
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    /*background-size: cover;*/
+    /*pointer-events: none;
+    transition: 0.5s;
+    opacity: 0.08;*/
+}
+
+.box::before {
+    content: '\f10e';
+    bottom: 70px;
+    right: 0;
+}
+
+.box:after {
+    content: '\f10d';
+    top: 60px;
+    left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

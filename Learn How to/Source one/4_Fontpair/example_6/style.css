@@ -1,0 +1,23 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(fauna/FaunaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(cinzel/static/Cinzel-Regular.ttf);
+}
+
+
+body {
+    font-family: myFirstFont;
+    font-size: 16px;
+}
+
+h3 {
+    font-family: mySecondFont;
+}
+
+p {
+    line-height: 1.6;
+}

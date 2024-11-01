@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Split skew menu with icon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="icon5.js"></script>
+
+    <script src="jquery-3.7.0.js"></script>
+</head>
+
+<body>
+
+    <div id="Left_skewdropdownmenu">
+        <ul>
+            <li class="first"><a class="active" href="#home"><span>Home</span></a></li>
+            <li><a href="#news"><span>News</span></a></li>
+            <li><a href="#about"><span>About</span></a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn"><span>Dropdown</span></a>
+                <div class="dropdown-content">
+                    <a href="#"><span>Link 1</span></a>
+                    <a href="#"><span>Link 2</span></a>
+                    <a href="#"><span>Link 3</span></a>
+                </div>
+            </li>
+            <li><a href="#contact"><span>Contact</span></a></li>
+
+            <li class="split">
+                <a href="#"><span><i class="fas fa-search"></i></span></a>
+            </li>
+            <form class="example" action="#" style="max-width:300px">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+
+        </ul>
+    </div>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $(".fa-search").click(function() {
+                $(".example").fadeToggle();
+                /*$("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);*/
+            });
+        });
+
+    </script>
+</body>
+
+</html>

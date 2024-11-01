@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Breadcumb</title>
+    <script src="icon5.js"></script>
+
+    <style>  
+        #breadcrumb ul, #breadcrumb2 ul {
+            padding: 10px 16px;
+            list-style-type: none;
+            background-color: #66B032;
+        }
+
+        #breadcrumb ul li, #breadcrumb2 ul li {
+            display: inline;
+            font-size: 18px;
+        }
+
+        #breadcrumb ul li+li::before {
+            content: "/\00a0";
+            padding: 8px;
+            color: black;
+        }
+        
+        #breadcrumb2 ul li+li::before {
+            content: "\3E";
+            padding: 8px;
+            color: black;
+        }
+
+        #breadcrumb ul li a, #breadcrumb2 ul li a {
+            color: #092834;
+            text-decoration: none;
+        }
+
+        #breadcrumb ul li a:hover, #breadcrumb2 ul li a:hover {
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    
+    <h3>First breadcrumb</h3>
+    <div id="breadcrumb">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    
+    <br>
+    <h3>Second breadcrumb</h3>
+    
+    <div id="breadcrumb2">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

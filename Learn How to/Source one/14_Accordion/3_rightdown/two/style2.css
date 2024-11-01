@@ -1,0 +1,97 @@
+.accordion::before,
+.accordion::after,
+.accactive::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.accordion {
+    background-color: #a0f0b4;
+    color: #0a4218;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    padding: 0;
+    border: 1px solid #c9d4e8;
+    text-align: left;
+    outline: none;
+    font-family: myFirstFont;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.accactive, 
+.accordion:hover {
+    background-color: #dcf0a0;
+    color: #46580e;
+    border: 1px solid darkkhaki;
+}
+
+.accordion::before {
+    content: '\f061';
+    color: #90eea8;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0a4218;
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 50px;
+}
+
+.accordion:hover::before,
+.accactive::before {
+    background-color: #46580e;
+    color: #dcf0a0;
+}
+
+.accordion::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border-left: 25px solid #0a4218;
+    background: transparent;
+    border-top: 50px solid transparent;
+}
+
+.accordion:hover::after,
+.accactive::after {
+    border-left: 25px solid #46580e;
+}
+
+.accactive::before {
+    content: '\f063';
+    text-align: center;
+}
+
+.panel {
+    padding: 0 18px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid darkkhaki;
+    font-family: mySecondFont;
+    text-align: justify;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    /* Webkit */
+    -moz-transition: max-height 1s ease-out;
+    /* Mozilla */
+    -ms-transition: max-height 1s ease-out;
+    /* Internet Explorer */
+    -o-transition: max-height 1s ease-out;
+    /* Opera */
+}

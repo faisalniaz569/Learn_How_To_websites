@@ -1,0 +1,48 @@
+blockquote {
+    width: 600px;
+    height: 230px;
+    background-color: #a0f0b4;
+    margin: 0 auto;
+    padding: 100px 50px 0 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0a4218;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+blockquote::before {
+    content: '\f10d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0a4218;
+    color: #a0f0b4;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.triangleupright {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 40px 0 0 40px;
+    border-color: transparent transparent transparent #0a4218;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+
+
+

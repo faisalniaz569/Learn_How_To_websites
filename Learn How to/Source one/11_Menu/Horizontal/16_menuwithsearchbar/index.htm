@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menu with searchbar</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="icon5.js"></script>
+    
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Mainmenu start -->
+    <div id="mainmenu">
+        <div class="container">
+            <div class="tranportmenu">
+                <ul>
+                    <li><a href="index.html" class="active" style="margin-left: 20px;">
+                            <p>Home</p>
+                        </a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="dropbtn">
+                            <p>Services</p>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="warehousing.html" style="transform: skewX(0deg);">
+                                <p style="transform: skewX(0deg);">Warehousing</p>
+                            </a>
+                            <a href="logistic.html" style="transform: skewX(0deg);">
+                                <p style="transform: skewX(0deg);">Logistic</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="aboutus.html">
+                            <p>About Us</p>
+                        </a></li>
+                    <li><a href="shop.html">
+                            <p>Shop</p>
+                        </a></li>
+                    <li><a href="blog.html">
+                            <p>Blog</p>
+                        </a></li>
+                    <li><a href="contact.html">
+                            <p>Contact</p>
+                        </a></li>
+                    <li style="float: right; margin-right: 20px;"><a href="#">
+                            <p><i class="fas fa-search"></i></p>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Mainmenu end -->
+
+    <!-- searchbar -->
+    <div id="formsearchbar">
+        <form class="example" style="margin:auto; max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+
+
+    <script src="myfile.js"></script>
+
+</body>
+
+</html>
