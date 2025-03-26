@@ -1,0 +1,334 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .menu-list {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-list li {
+        width: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'menu'
+            'sidebar'
+            'main'
+            'threecol'
+            'fourcol'
+            'footer';
+    }
+
+    .threecol,
+    .fourcol {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .main,
+    .twocol,
+    .threecol,
+    .fourcol {
+        margin: 0 10px;
+    }
+
+    .wrapper {
+        height: auto;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px) {
+
+    .threecol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .fourcol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'menu'
+            'sidebar'
+            'main'
+            'threecol'
+            'fourcol'
+            'footer';
+    }
+
+    .menu-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .sidebar,
+    .main,
+    .twocol,
+    .threecol,
+    .fourcol {
+        margin: 0 10px;
+    }
+
+    .wrapper {
+        height: auto;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /*.twocol {
+       /* display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+        grid-area: twocol;
+    }+/
+
+    .threecol {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-area: threecol;
+    }
+
+    .fourcol {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        grid-area: fourcol;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 250px 1fr 1fr 1fr;
+        grid-template-areas:
+            'header header header header'
+            'menu menu menu menu'
+            'sidebar main main main'
+            'threecol threecol threecol threecol'
+            'fourcol fourcol fourcol fourcol'
+            'footer footer footer footer';
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .sidebar {
+        background-color: lightgray;
+        padding: 20px;
+    }
+
+    .main {
+        background-color: lightblue;
+        padding: 20px;
+    }
+
+    .box {
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        background-color: lightblue;
+    }
+    
+    .sidebar, .main, .twocol, .threecol, .fourcol { margin: 0 10px;  }*/
+
+    .twocol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* দুইটি সমান কলাম */
+        gap: 20px;
+    }
+
+    .threecol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* ৩ কলামের বদলে ২ কলাম */
+        gap: 20px;
+    }
+
+    .fourcol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* ৪ কলামের বদলে ২ কলাম */
+        gap: 20px;
+    }
+
+    .sidebar {
+        background-color: lightgray;
+        padding: 20px;
+    }
+
+    .main {
+        background-color: lightblue;
+        padding: 20px;
+    }
+
+    .wrapper {
+        height: auto;
+    }
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .twocol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* দুইটি সমান কলাম */
+        gap: 20px;
+    }
+
+    .threecol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* ৩ কলামের বদলে ২ কলাম */
+        gap: 20px;
+    }
+
+    .fourcol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* ৪ কলামের বদলে ২ কলাম */
+        gap: 20px;
+    }
+
+    .sidebar {
+        background-color: lightgray;
+        padding: 20px;
+    }
+
+    .main {
+        background-color: lightblue;
+        padding: 20px;
+    }
+
+    .sidebar,
+    .main,
+    .twocol,
+    .threecol,
+    .fourcol {
+        margin: 0 10px;
+    }
+
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header'
+            'menu menu menu menu'
+            'sidebar main main main'
+            'threecol threecol threecol threecol'
+            'fourcol fourcol fourcol fourcol'
+            'footer footer footer footer';
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .menu-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            'header header header header'
+            'menu menu menu menu'
+            'sidebar main main main'
+            'threecol threecol threecol threecol'
+            'fourcol fourcol fourcol fourcol'
+            'footer footer footer footer';
+        grid-template-columns: 200px 1fr 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        height: 350px;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: lightgray;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: lightblue;
+        padding: 20px;
+    }
+
+    .twocol {
+        grid-area: twocol;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .threecol {
+        grid-area: threecol;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+    }
+
+    .threecol .items {
+        background-color: lightblue;
+        padding: 20px;
+    }
+
+    .fourcol {
+        grid-area: fourcol;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+    }
+
+    .box {
+        background-color: lightblue;
+        color: #333;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        display: flex;
+        padding: 25px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
