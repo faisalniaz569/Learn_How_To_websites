@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "menu menu menu"
+                "content content content"
+                "two-col two-col two-col"
+                "three-col three-col three-col"
+                "four-col four-col four-col"
+                "footer footer footer";
+            gap: 10px;
+            padding: 10px;
+        }
+        .container > div {
+            padding: 20px 0;
+            text-align: center;
+            /*background: lightgray;*/
+        }
+        .header { grid-area: header; background: #4CAF50; color: white; }
+        .menu { grid-area: menu; background: #2196F3; color: white; }
+        .content { grid-area: content; background: #FFC107; }
+        .two-col { grid-area: two-col; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .three-col { grid-area: three-col; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+        .four-col { grid-area: four-col; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10px; }
+        .footer { grid-area: footer; background: #f44336; color: white; }
+        
+        .two-col div {
+            background-color: red;
+            gap: 10px;
+        }
+        
+        .three-col div {
+            background-color: palegreen;
+            gap: 10px;
+        }
+        
+        .four-col div {
+            background-color: cadetblue;
+            gap: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-areas: 
+                    "header"
+                    "menu"
+                    "content"
+                    "two-col"
+                    "three-col"
+                    "four-col"
+                    "footer";
+            }
+            .two-col, .three-col, .four-col {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Main Content</div>
+        <div class="two-col">
+            <div>Column 1</div>
+            <div>Column 2</div>
+        </div>
+        <div class="three-col">
+            <div>Column 1</div>
+            <div>Column 2</div>
+            <div>Column 3</div>
+        </div>
+        <div class="four-col">
+            <div>Column 1</div>
+            <div>Column 2</div>
+            <div>Column 3</div>
+            <div>Column 4</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
