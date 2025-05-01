@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Breadcumb</title>
-    <script src="icon5.js"></script>
 
     <style>  
         #breadcrumb ul, #breadcrumb2 ul {
@@ -25,7 +24,7 @@
         }
         
         #breadcrumb2 ul li+li::before {
-            content: "\3E";
+            content: "\3E\00a0";
             padding: 8px;
             color: black;
         }
@@ -46,26 +45,26 @@
     
     
     <h3>First breadcrumb</h3>
-    <div id="breadcrumb">
+    <nav id="breadcrumb">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </div>
+    </nav>
     
     <br>
     <h3>Second breadcrumb</h3>
     
-    <div id="breadcrumb2">
+    <nav id="breadcrumb2">
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
 
 </body>
