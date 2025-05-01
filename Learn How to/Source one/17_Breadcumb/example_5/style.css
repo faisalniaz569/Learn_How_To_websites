@@ -24,11 +24,9 @@ body {
 
 .breadcumb > ul {
     list-style-type: none;
-}
-
-.breadcumb > ul > li {
-	float: left;
-	margin-right: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
 }
 
 .breadcumb > ul > li > a {
@@ -93,24 +91,3 @@ body {
     background-color: chartreuse;
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
