@@ -29,10 +29,11 @@ div#breadcumb {
 
 #breadcumb ul {
     list-style-type: none;
+    display: flex;
 }
 
 #breadcumb ul li {
-    float: left;
+    float: none;
 }
 
 #breadcumb ul li a {
