@@ -23,6 +23,12 @@ body {
     list-style-type: none;
 }
 
+#breadcumb ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #breadcumb ul li {
     float: left;
 }
