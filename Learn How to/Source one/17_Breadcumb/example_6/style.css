@@ -22,7 +22,7 @@ body {
     position: relative;
 }
 
-#wrapper .breadcumbs {
+#wrapper .breadcrumbs {
     width: 100%;
     height: 80px;
     background-color: #8fa1fb;
@@ -33,19 +33,19 @@ body {
     padding-top: 20px;
 }
 
-#wrapper .breadcumbs ul {
+#wrapper .breadcrumbs ul {
     list-style-type: none;
 }
 
-#wrapper > .breadcumbs > ul > li {
+#wrapper > .breadcrumbs > ul > li {
     float: left;
 }
 
-#wrapper > .breadcumbs > ul > li.active {
+#wrapper > .breadcrumbs > ul > li.active {
     position: relative;
 }
 
-#wrapper > .breadcumbs > ul > li.active:before {
+#wrapper > .breadcrumbs > ul > li.active:before {
     content: "";
     position: absolute;
     top: 60px;
@@ -54,7 +54,7 @@ body {
     background: #ff8ea1;
 }
 
-#wrapper > .breadcumbs > ul > li > a {
+#wrapper > .breadcrumbs > ul > li > a {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -63,36 +63,36 @@ body {
     padding-right: 40px;
 }
 
-.breadcumbs p {
+.breadcrumbs p {
     text-align: center;
     font-weight: bold;
 }
 
-#wrapper > .breadcumbs > ul > li > a > .fas {
+#wrapper > .breadcrumbs > ul > li > a > .fas {
     padding-bottom: 12px;
 }
 
-#wrapper > .breadcumbs > ul > li.active > a {
+#wrapper > .breadcrumbs > ul > li.active > a {
     color: #ff8ea1;
 }
 
-#wrapper > .breadcumbs > ul > li:hover > a {
+#wrapper > .breadcrumbs > ul > li:hover > a {
     color: #ff8ea1;
     cursor: pointer;
 }
 
-#wrapper > .breadcumbs > ul > li.active > p {
+#wrapper > .breadcrumbs > ul > li.active > p {
     color: white;
 }
 
-#wrapper > .breadcumbs > ul > li:hover > p {
+#wrapper > .breadcrumbs > ul > li:hover > p {
     color: white;
     cursor: pointer;
     border-bottom: 3px solid #ff8ea1;
     padding-bottom: 9px;
 }
 
-#wrapper .breadcumbs .home {
+#wrapper .breadcrumbs .home {
     position: absolute;
     top: 0;
     left: 0;
@@ -105,7 +105,7 @@ body {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 }
 
-#wrapper .breadcumbs .home a {
+#wrapper .breadcrumbs .home a {
     font-size: 25px;
     color: white;
 }
