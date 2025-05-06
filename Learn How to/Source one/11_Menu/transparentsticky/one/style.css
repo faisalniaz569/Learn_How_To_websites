@@ -22,8 +22,9 @@ body {
 }
 
 .content {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
+    padding: 20px;
     text-align: justify;
 }
 
@@ -47,6 +48,7 @@ body {
 .mainmenu {
     width: 100%;
     position: fixed;
+    z-index: 999;
 }
 
 .mainmenu.black {
@@ -54,7 +56,6 @@ body {
     border-bottom: 0;
     transition: 1s;
 }
-
 
 .menuthree {
     overflow: hidden;
@@ -73,10 +74,6 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     transition: 1s;
-}
-
-.mainmenu.black {
-    background: black;
 }
 
 .menuthree a:hover {
