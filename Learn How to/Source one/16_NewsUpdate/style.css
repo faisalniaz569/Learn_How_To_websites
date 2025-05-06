@@ -59,7 +59,6 @@ h4, h5, h6 {
 }
 
 #newsupdate ul li {
-    float: none;
     border-bottom: 1px solid #ddd;
     padding: 10px;
     text-align: left;
