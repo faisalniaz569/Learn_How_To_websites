@@ -14,6 +14,12 @@ body {
     width: 25%;
 }
 
+.tablink.active {
+    font-weight: bold;
+    color: #000;
+}
+
+
 .tablink:hover {
     background-color: #777;
 }
