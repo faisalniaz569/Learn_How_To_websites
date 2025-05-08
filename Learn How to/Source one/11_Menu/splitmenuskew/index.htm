@@ -3,11 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Split skew menu with icon</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="icon5.js"></script>
+    <title>Split Skew Menu with Icon</title>
 
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
     <script src="jquery-3.7.0.js"></script>
+
+    <!-- Custom JS (if needed) -->
+    <script src="icon5.js"></script>
 </head>
 
 <body>
@@ -30,26 +38,24 @@
             <li class="split">
                 <a href="#"><span><i class="fas fa-search"></i></span></a>
             </li>
-            <form class="example" action="#" style="max-width:300px">
-                <input type="text" placeholder="Search.." name="search2">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-
         </ul>
+
+        <!-- Search Form (moved outside <ul>) -->
+        <form class="example" action="#" style="max-width:300px">
+            <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
     </div>
 
-
-
     <script>
-        $(document).ready(function() {
-            $(".fa-search").click(function() {
+        $(document).ready(function () {
+            $(".fa-search").click(function (e) {
+                e.preventDefault(); // Prevent default link behavior
                 $(".example").fadeToggle();
-                /*$("#div2").fadeToggle("slow");
-                $("#div3").fadeToggle(3000);*/
             });
         });
-
     </script>
+
 </body>
 
 </html>
