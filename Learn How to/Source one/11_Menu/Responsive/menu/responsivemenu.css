@@ -19,12 +19,13 @@
         position: absolute;
         right: 0;
         top: 0;
-        padding: 17px;
+        padding: 16px;
     }
 
     .topnav.responsive a {
         float: none;
         display: block;
         text-align: left;
+        padding: 16px 16px;
     }
 }
