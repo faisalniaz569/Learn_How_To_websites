@@ -4,6 +4,12 @@
     background-color: #333;
 }
 
+.menufour::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .menufour ul {
     list-style-type: none;
     margin: 0;
@@ -13,6 +19,8 @@
 .menufour li {
     float: left;
     border-right: 1px solid #bbb;
+    margin: 0;
+    padding: 0;
 }
 
 .menufour li:last-child {
@@ -24,6 +32,7 @@
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    margin: 0;
     text-decoration: none;
     font-size: 17px;
 }
