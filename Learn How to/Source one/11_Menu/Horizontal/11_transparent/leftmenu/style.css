@@ -12,6 +12,12 @@ body {
     height: 50vh;
 }
 
+.transparentmenu {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .transparentmenu ul {
     list-style-type: none;
     margin: 0;
