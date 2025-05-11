@@ -17,6 +17,12 @@ body {
     background-color: transparent;
 }
 
+.transparentmenuright::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .transparentmenuright a {
     float: left;
     color: #f2f2f2;
