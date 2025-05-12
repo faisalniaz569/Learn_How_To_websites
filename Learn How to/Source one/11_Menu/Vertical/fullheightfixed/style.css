@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    height: 100vh;
 }
 
 ul {
@@ -29,3 +30,17 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
+
+/* Content area */
+div {
+    margin-left: 25%;
+    padding: 16px;
+    height: 100%; /* Ensures content area takes remaining height */
+}
+
+
+
+
+
+
+
