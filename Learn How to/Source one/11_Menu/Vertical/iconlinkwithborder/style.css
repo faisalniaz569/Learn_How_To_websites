@@ -42,15 +42,9 @@ li a:hover:not(.active) {
 
 
 /* right align */
-.rightborder li, .rightbordertwo li { text-align: right; }
+.rightborder li, .rightbordertwo li, .rightborderthree li { text-align: right; }
 
 .rightbordertwo li i {
     float: right;
     margin-left: 10px;
 }
-
-
-
-
-
-
