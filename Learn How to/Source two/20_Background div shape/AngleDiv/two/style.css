@@ -5,7 +5,7 @@
 }
 
 .angeldivshape {
-    background: white url("house.jpg") no-repeat 0 0;
+    background: white url("house.jpg") no-repeat center center;
     width: 100%;
     height: 500px;
     background-position: center;
