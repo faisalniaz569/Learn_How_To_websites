@@ -17,8 +17,12 @@
 
 .roundfa {
     border-radius: 50%;
-    width: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    display: inline-block !important;
 }
+
 
 .fa-facebook-f {
   background: #3B5998;
