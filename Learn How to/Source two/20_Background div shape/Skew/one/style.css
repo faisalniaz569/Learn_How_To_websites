@@ -55,6 +55,8 @@ body{
     padding: 0;
     font-size: 1em;
     line-height: 1.5em;
-    width: 80%;
-    float: right;
+    width: auto;
+    max-width: 600px;
+    margin-left: auto;
+    text-align: right;
 }
