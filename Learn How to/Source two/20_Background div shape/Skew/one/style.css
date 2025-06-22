@@ -31,12 +31,17 @@ body{
     width: 80%;
 }
 
-.sec2{
+.sec2 {
     transform: skew(0deg, -10deg) translateY(0px);
     padding: 0 200px 150px;
     color: white;
     font-family: sans-serif;
-    text-align: right;
+}
+
+.sec2 .container {
+    transform: skew(0deg, 10deg); 
+    text-align: right;            
+    padding: 150px 0;           
 }
 
 .sec2 h1{
@@ -51,13 +56,5 @@ body{
     font-size: 1em;
     line-height: 1.5em;
     width: 80%;
+    float: right;
 }
-
-
-
-
-
-
-
-
-
