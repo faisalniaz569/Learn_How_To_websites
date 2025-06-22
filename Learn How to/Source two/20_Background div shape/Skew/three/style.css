@@ -41,7 +41,7 @@ main.sec3{
     position: absolute;
     bottom: 0;
     left: 0;
-    border-width: 100px 0 0 1400px;    /* top right bottom left */
+    border-width: 100px 0 0 100vw;    /* top right bottom left */
     border-style: solid;
     border-color: transparent transparent transparent white;
 }
@@ -50,14 +50,7 @@ main.sec3{
     position: absolute;
     top: 0;
     left: 0;
-    border-width: 0 0 100px 1400px;    /* top right bottom left */
+    border-width: 0 0 100px 100vw;    /* top right bottom left */
     border-style: solid;
     border-color: transparent transparent transparent white;
 }
-
-
-
-
-
-
-
