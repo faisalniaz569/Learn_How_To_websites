@@ -28,6 +28,9 @@ body {
 }
 
 .main .layer1 {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-color: #4ef75c;
@@ -45,7 +48,7 @@ body {
     height: 100%;
     background-color: #262626;
     transition: 1s;
-    z-index: -1;
+    z-index: 0;
 }
 
 .main:hover .layer2 {
@@ -63,6 +66,7 @@ body {
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 .content h1 {
