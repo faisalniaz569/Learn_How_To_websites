@@ -24,48 +24,50 @@ body{
     font-size: 70px;
 }
 
-.content{
+.content {
     background: white;
     color: black;
-    height: 450px;
     padding-top: 130px;
     position: relative;
     text-align: center;
     width: 100%;
 }
-.content h2{
+
+.content h2 {
     font-size: 55px;
     text-transform: uppercase;
-    margin: 0;
     margin-bottom: 30px;
     font-family: 'Times';
 }
-.content p{
+
+.content p {
     padding: 0 180px;
     font-family: 'Poppins', sans-serif;
     line-height: 2;
 }
-.content:before{
+
+.content:before,
+.content:after {
     content: '';
     position: absolute;
-    width: 60%;
+    width: 50%; 
     height: 125px;
     top: -50px;
-    left: 0;
     background: white;
-    transform: skewY(10deg);
 }
 
-.content:after{
-    content: '';
-    position: absolute;
-    width: 60%;
-    height: 125px;
-    top: -50px;
-    right: 0;
-    background: white;
-    transform: skewY(-10deg);
+.content:before {
+    left: 0;
+    transform: skewY(10deg);
+    transform-origin: top left;
 }
+
+.content:after {
+    right: 0;
+    transform: skewY(-10deg);
+    transform-origin: top right;
+}
+
 
 
 
