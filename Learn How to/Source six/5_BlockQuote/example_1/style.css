@@ -1,9 +1,8 @@
 blockquote {
     width: 600px;
-    height: 230px;
     background-color: #a0f0b4;
     margin: 0 auto;
-    padding: 100px 50px 0 50px;
+    padding: 50px; 
     font-size: 16px;
     font-weight: bold;
     color: #0a4218;
@@ -12,7 +11,7 @@ blockquote {
 }
 
 blockquote::before {
-    content: '\f10d';
+    content: '\f10d'; /* Font Awesome quote-left icon */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-style: normal;
@@ -20,11 +19,11 @@ blockquote::before {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     background-color: #0a4218;
     color: #a0f0b4;
-    font-size: 18px;
+    font-size: 16px;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -32,17 +31,12 @@ blockquote::before {
 }
 
 .triangleupright {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-style: solid;
-    border-width: 40px 0 0 40px;
+    border-width: 40px 0 0 25px;
     border-color: transparent transparent transparent #0a4218;
-    transform: rotate(0deg);
     position: absolute;
-    top: 0;
-    left: 40px;
+    top: 0px; 
+    left: 40px; 
 }
-
-
-
-
