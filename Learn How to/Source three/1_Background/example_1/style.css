@@ -1,45 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: sans-serif;
     font-size: 18px;
+    line-height: 1.6;
+    background-color: #f0f0f0;
 }
 
-
 .bgpattern1 {
-    background: radial-gradient(circle, #001570 25%, transparent 26%) 0% 0% / 3em 3em, radial-gradient(circle at bottom left, #001570 12%, transparent 13%) 0% 0% / 3em 3em, radial-gradient(circle at bottom right, #001570 12%, transparent 13%) 0% 0% / 3em 3em, radial-gradient(circle at top left, #001570 12%, transparent 13%) 0% 0% / 3em 3em, radial-gradient(circle at top right, #001570 12%, transparent 13%) 0% 0% / 3em 3em #F9F9FF;
-    opacity: 0.5;
+    background: radial-gradient(circle, rgba(0, 21, 112, 0.4) 25%, transparent 26%) 0% 0% / 3em 3em,
+                radial-gradient(circle at bottom left, rgba(0, 21, 112, 0.4) 12%, transparent 13%) 0% 0% / 3em 3em,
+                radial-gradient(circle at bottom right, rgba(0, 21, 112, 0.4) 12%, transparent 13%) 0% 0% / 3em 3em,
+                radial-gradient(circle at top left, rgba(0, 21, 112, 0.4) 12%, transparent 13%) 0% 0% / 3em 3em,
+                radial-gradient(circle at top right, rgba(0, 21, 112, 0.4) 12%, transparent 13%) 0% 0% / 3em 3em,
+                #F9F9FF;
     background-size: 50px 50px;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .bgwhite {
     background-color: white;
-    width: 1200px;
-    height: 200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 30px;
-    line-height: 1.6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .bgpattern2 {
-    background: url(pattern1.jpg);
+    background: url('pattern1.jpg');
     background-size: 50px 50px;
-    height: 250px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    margin-top: 40px;
 }
 
 .bgcolor {
-    background-color: tomato;
-    opacity: 0.8;
+    background-color: rgba(255, 99, 71, 0.8); /* tomato color with opacity */
     color: whitesmoke;
-    width: 1200px;
-    height: auto;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 30px;
-    line-height: 1.6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
