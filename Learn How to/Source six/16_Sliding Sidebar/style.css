@@ -60,6 +60,12 @@ body {
     outline: none;
 }
 
+.sidebar_contact input:focus,
+.sidebar_contact textarea:focus {
+    border-color: #00bcd4;
+}
+
+
 .sidebar_contact textarea {
     height: 100px;
     resize: none;
@@ -88,6 +94,10 @@ body {
     text-align: center;
     cursor: pointer;
     background-color: #f00;
+}
+
+.toggle:hover {
+    background-color: #c00;
 }
 
 .toggle::before {
